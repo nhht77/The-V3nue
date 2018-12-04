@@ -27,12 +27,13 @@ export class Drawer extends Component {
 
       const sideList = (
         <div>
-          {["Event Count Down", "Venue NFO", "Highlight", "Pricing", "Location"].map( text => {
-            return <List>
+          {["Event Count Down", "Venue NFO", "Highlight", "Pricing", "Location"].map( (text, idx) => {
+            return (
+            <List key={idx}>
                 <ListItem button>
                     <ListItemText primary={text} />
                 </ListItem>
-            </List>
+            </List>)
           })}
 
         </div>
