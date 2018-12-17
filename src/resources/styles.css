@@ -120,6 +120,7 @@ footer .footer-copyright {
     background: #ff4800;
     font-size: 19px;
     padding: 10px;
+    letter-spacing: 2px;
     display: inline-block;
     text-transform: uppercase;
 }

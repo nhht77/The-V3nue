@@ -18,9 +18,9 @@ class DemoCarousel extends Component {
       }
 
       const imgSrc = [img1, img2, img3];
-      const img = imgSrc.map( i => {
+      const img = imgSrc.map( (i, idx) => {
         return (
-          <div>
+          <div key={idx}>
             <img 
             src={i}
             alt="Sungha Jung"
