@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import img1 from "../resources/img/img-1.jpg"; 
-import img2 from "../resources/img/img-2.jpg"; 
-import img3 from "../resources/img/img-3.jpg"; 
+import img1 from "../../resources/img/img-1.jpg"; 
+import img2 from "../../resources/img/img-2.jpg"; 
+import img3 from "../../resources/img/img-3.jpg"; 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -24,7 +24,7 @@ class DemoCarousel extends Component {
             <img 
             src={i}
             alt="Sungha Jung"
-            style={{height:"100vh"}}/>
+            style={{height:"100vh", width:"100%"}}/>
           </div>
         );
       })
