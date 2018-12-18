@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Zoom from 'react-reveal/Zoom';
 
 import calendar from "../../resources/img/icons/calendar.png";
 import location from "../../resources/img/icons/location.png";
@@ -10,6 +11,7 @@ export class Info extends Component {
       <div className="info-wrapper">
       <div className="center-wrapper">
 
+      <Zoom>
         <div className="info-item">
           <div className="info-outer">
           <div className="info-inner">
@@ -24,7 +26,9 @@ export class Info extends Component {
           </div>
           </div>
         </div>
+      </Zoom>
         
+      <Zoom delay={500}>
         <div className="info-item">
           <div className="info-outer">
           <div className="info-inner">
@@ -39,7 +43,8 @@ export class Info extends Component {
           </div>
           </div>
         </div>
-        
+      </Zoom>
+      
       </div>
       </div>
       </div>

@@ -58,7 +58,7 @@ export class Deadline extends Component {
 
     const countdown = time.map( (t, idx) => {
         return (
-            <div className="countdown-item">
+            <div key={idx} className="countdown-item">
             <div className="countdown-time">
                 {t.value}
             </div>

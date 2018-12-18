@@ -27,9 +27,8 @@ body {
 }
 
 .center-wrapper {
-    width: 900px;
+    width: 85%;
     margin:0 auto;
-    display: flex;
 }
 
 
@@ -148,12 +147,16 @@ footer .footer-copyright {
 }
 
 /*====================
-        VENUE NFO
+        VENUE INFO
 ======================*/
 
 .info-wrapper {
     display: flex;
     padding: 170px 0px;
+}
+
+.info-wrapper .center-wrapper{
+    display: flex;
 }
 
 .info-item {
@@ -225,6 +228,7 @@ footer .footer-copyright {
     text-transform: uppercase;
     color:#2c2c2c;
     font-size: 52px;
+    letter-spacing: 10px;
 }
 
 .highlight-wrapper .highlight-description {
@@ -241,11 +245,19 @@ footer .footer-copyright {
     padding: 70px 0px;
 }
 
-.discount-wrapper .discount-porcentage {
+.discount-wrapper .center-wrapper{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.discount-wrapper .discount-percentage {
     padding-right: 100px;
 }
 
-.discount-wrapper .discount-porcentage span:nth-child(1) {
+.discount-wrapper .discount-percentage span:nth-child(1) {
     color: #ff4800;
     font-size: 125px;
     font-weight: 400;
@@ -253,7 +265,7 @@ footer .footer-copyright {
     line-height: 120px;
 }
 
-.discount-wrapper .discount-porcentage span:nth-child(2) {
+.discount-wrapper .discount-percentage span:nth-child(2) {
     color: #2c2c2c;
     font-size: 50px;
     font-weight: 400;
@@ -272,6 +284,11 @@ footer .footer-copyright {
     line-height: 30px;
     font-size: 18px;
     font-weight: 300;
+}
+
+.discount-wrapper .discount-description .btn-info{
+    background-color: #ffa800;
+    color: #fff;
 }
 
 /*====================
