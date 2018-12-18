@@ -4,7 +4,26 @@ import Button from '@material-ui/core/Button';
 import ticketURL from '../../resources/img/icons/ticket.png';
 
 export class Discount extends Component {
+  state = {
+    discountStart:0,
+    discountPrice:30
+}
 
+
+updatePrice = () => {
+    const {discountPrice, discountStart} = this.state
+    if(discountStart < discountPrice){
+        let newState = {...this.state}
+        newState.discountStart ++;
+        this.setState({discountStart: newState.discountStart});
+    }
+}
+
+componentDidUpdate(){
+    setTimeout(()=>{
+        this.updatePrice()
+    },30)
+}
   
   
   render() {
@@ -13,7 +32,7 @@ export class Discount extends Component {
 
         <Fade onReveal={() => this.updatePrice()}>
           <div className="discount-percentage">
-              <span>30%</span>
+              <span>{this.state.discountStart}%</span>
               <span>Off</span>
           </div>
         </Fade>
