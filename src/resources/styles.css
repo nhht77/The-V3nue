@@ -62,7 +62,7 @@ footer {
     text-align: center;
     font-size: 60px;
     color:#ffffff;
-    background: red;
+    background: #ffa800;
 }
 
 footer .footer-copyright {
@@ -299,7 +299,6 @@ footer .footer-copyright {
     padding: 70px 0px;
 }
 
-
 .pricing-section h2 {
     color: #ffffff;
     text-transform: uppercase;
@@ -312,6 +311,7 @@ footer .footer-copyright {
     display: flex;
     flex-wrap: wrap;
 }
+
 .pricing-wrapper .pricing-item{
     flex-grow: 1;
     width: 33%;
