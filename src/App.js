@@ -5,6 +5,7 @@ import Feature from './components/Features/index';
 import Info from './components/Info/index';
 import Highlight from './components/Highlight/index';
 import Pricing from './components/Pricing/index';
+import Location from './components/Location/index';
 import Footer from './components/Footer/index';
 
 import './resources/styles.css';
@@ -18,6 +19,7 @@ class App extends Component {
         <Info/>
         <Highlight/>
         <Pricing/>
+        <Location/>
         <Footer/>
       </div>
     );

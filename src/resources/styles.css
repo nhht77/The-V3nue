@@ -300,11 +300,12 @@ footer .footer-copyright {
 }
 
 .pricing-section h2 {
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 50px;
     margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
 .pricing-wrapper {
