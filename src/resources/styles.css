@@ -312,6 +312,12 @@ footer .footer-copyright {
     flex-wrap: wrap;
 }
 
+.pricing-wrapper .center-wrapper{
+    flex-direction: row;
+    display: flex;
+    
+}
+
 .pricing-wrapper .pricing-item{
     flex-grow: 1;
     width: 33%;
@@ -322,6 +328,8 @@ footer .footer-copyright {
 .pricing-wrapper .pricing-inner-wrapper {
     border:2px solid #ffa800;
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-inner-wrapper .pricing-title {
@@ -348,8 +356,10 @@ footer .footer-copyright {
     min-height: 70px;
 }
 
-.pricing-inner-wrapper .pricing-buttons {
-     text-align: center;
+.pricing-item .pricing-inner-wrapper .pricing-btn {
+    background-color: #ffa800;
+    color: #fff;
+    align-self: center;
 }
 
 
