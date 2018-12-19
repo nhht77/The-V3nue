@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Zoom from 'react-reveal/Zoom';
 import Button from '@material-ui/core/Button';
 import ticketURL from '../../resources/img/icons/ticket.png';
 
@@ -8,19 +9,23 @@ export class Pricing extends Component {
     const itemPrice = [
       {
         price:100,
-        type: "Balcony"
+        type: "Balcony",
+        delay:500
       },
       {
         price:150,
-        type: "Medium"
+        type: "Medium",
+        delay:0        
       },
       {
         price:200,
-        type: "Star"
+        type: "Star",
+        delay:500        
       }
     ]
 
     let items = itemPrice.map( (item, idx) => 
+    <Zoom delay={item.delay}>
     <div key={idx} className="pricing-item">
             <div className="pricing-inner-wrapper">
               <div className="pricing-title">
@@ -40,6 +45,7 @@ export class Pricing extends Component {
               </Button>
             </div>
           </div>
+          </Zoom>
     )
 
     return (
