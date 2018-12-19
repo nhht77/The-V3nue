@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Element} from 'react-scroll';
 
 import Header from './components/partials/Header';
 import Feature from './components/Features/index';
@@ -15,11 +16,27 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <Feature/>
-        <Info/>
-        <Highlight/>
-        <Pricing/>
-        <Location/>
+
+        <Element name="Event Count Down">
+          <Feature/>
+        </Element>
+        
+        <Element name="Venue INFO">
+          <Info/>
+        </Element>
+        
+        <Element name="Highlight">        
+          <Highlight/>
+        </Element>        
+
+        <Element name="Pricing">        
+          <Pricing/>
+        </Element>        
+
+        <Element name="Location">        
+          <Location/>
+        </Element>        
+        
         <Footer/>
       </div>
     );

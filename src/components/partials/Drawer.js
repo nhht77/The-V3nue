@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {scroller} from 'react-scroll'; 
+
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -18,6 +20,8 @@ export class Drawer extends Component {
           [side]: open,
         });
       };
+
+  
     
   render() {
       const drawerStyle = {
@@ -25,17 +29,29 @@ export class Drawer extends Component {
         padding: '0.5rem 2rem'
       }
 
+      const ScrollToElement = item => {
+        let text = item.text;
+        let location = text.trim();
+        scroller.scrollTo(text, {
+          duration: 1500,
+          delay: 100,
+          smooth: true,
+          offset: -90
+        })
+
+        console.log(location);
+      }
+
       const sideList = (
         <div>
-          {["Event Count Down", "Venue NFO", "Highlight", "Pricing", "Location"].map( (text, idx) => {
+          {["Event Count Down", "Venue INFO", "Highlight", "Pricing", "Location"].map( (text, idx) => {
             return (
             <List key={idx}>
-                <ListItem button>
+                <ListItem onClick={() => ScrollToElement({text})} button>
                     <ListItemText primary={text} />
                 </ListItem>
             </List>)
           })}
-
         </div>
       );
       

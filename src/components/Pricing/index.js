@@ -25,8 +25,8 @@ export class Pricing extends Component {
     ]
 
     let items = itemPrice.map( (item, idx) => 
-    <Zoom delay={item.delay}>
-    <div key={idx} className="pricing-item">
+    <Zoom key={idx} delay={item.delay}>
+    <div className="pricing-item">
             <div className="pricing-inner-wrapper">
               <div className="pricing-title">
                 <span>${item.price}</span>
