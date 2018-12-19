@@ -2,6 +2,7 @@ body {
     padding:0;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden
 }
 
 .font-righteous {
@@ -104,6 +105,7 @@ footer .footer-copyright {
     font-size: 2.4rem;
     padding: 21px 70px 0px 70px;
     text-transform: uppercase;
+    text-shadow: 2px 2px #d93d00;
 }
 
 /*====================
@@ -386,4 +388,105 @@ footer .footer-copyright {
     font-size: 29px;
     padding: 15px 20px;
     text-align: center;
+}
+
+/* Width: 1280px */
+@media (max-width: 1199.98px) { 
+    /* INFO VENUE */
+    .info-item .info-inner{
+        height: 30vw;
+    }
+ }
+
+@media (max-width: 991.98px) { 
+    /* INFO VENUE */
+    .info-item .info-inner{
+        height: 40vw;
+    }
+
+    /* PRICING */
+    .pricing-wrapper .center-wrapper{
+        width: 95%
+    }
+ }
+
+@media (max-width: 790.98px) { 
+    /* FEATURE */
+    .countdown-wrapper{
+        display: flex;
+    }
+
+    .countdown-wrapper .countdown-time{
+        font-size: 2.2rem;
+    }
+
+    .countdown-wrapper .countdown-tag{
+        font-size: .8rem;
+    }
+
+    /* INFO VENUE */
+    .info-item {
+        margin-bottom: 5rem;
+    }
+    .info-item .info-inner{
+        height: 45vw;
+    }
+
+    .info-wrapper .center-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HIGHLIGHT */
+    .discount-wrapper .discount-percentage {
+        display: none
+    }    
+
+    .discount-wrapper .discount-description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /* PRICING */
+    .pricing-wrapper .center-wrapper{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .pricing-wrapper .pricing-item{
+        width: 50%
+    }    
+}
+
+@media (max-width: 575.98px) { 
+    /* FEATURE */
+    .countdown-wrapper .countdown-bottom{
+        align-items: center;
+    }
+
+    .countdown-wrapper .countdown-time{
+        font-size: 2rem;
+    }
+
+    /* INFO VENUE */
+    .info-item .info-inner{
+        height: 55vw;
+    }
+
+    .info-wrapper .center-wrapper{
+        width: 90%;
+    }
+
+    .info-item{
+        width: 65%;
+    }
+
+    .pricing-wrapper .pricing-item {
+        flex-grow: 1;
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+ }
 }
